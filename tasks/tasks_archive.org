@@ -1,0 +1,180 @@
+#+STARTUP: content hideblocks
+#+TODO: TASK(t!) | DONE(d) CANCEL(c)
+#+TODO: BUG(b!) | FIXED(f) REJECT(r)
+#+PRIORITIES: A F C
+#+TAGS: current(c) testing(t)
+
+
+* Архив задач
+
+** DONE Заменить видеоплеер с рекламой на страницах
+   :PROPERTIES:
+   :issue_id: 1
+   :issue_type: task
+   :ARCHIVE_TIME: 2020-01-23 Чт 11:34
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Задачи
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+   [2019-06-22 Сб]
+
+   Одно видео
+   https://sakhalin.info/news/170724/
+   https://sakhalin.tv/embed/119769/
+
+   Два видео
+   https://sakhalin.info/news/170777
+
+   Баг с классом
+   https://sakhalin.info/news/170765
+
+   #+BEGIN_SRC js
+     var positionNode = document.querySelector(".article-video");
+     document.replacedVideo = {
+         vidurl: "https://s2.sakhalin.tv/movies/4/5/45064efbce311ce22761424cd991a82c.360p.mp4",
+         imgurl: "https://s2.sakhalin.tv/img/p/4/5/45064efbce311ce22761424cd991a82c-1.jpg"
+     }
+
+     var div = document.createElement("div");
+     div.id = "mydiv";
+     positionNode.appendChild(div);
+
+     var script = document.createElement("script");
+     script.src = "https://sakhalin.tv/jwplayer/7.8.7/jwplayer.js";
+     script.addEventListener("load", (e) => {
+         var vidurl = document.replacedVideo.vidurl;
+         var vidimg = document.replacedVideo.imgurl;
+
+         jwplayer.key = "WMEKOZ42QalnSupiRYb8CBnIjHTo9y9fsWFK8EtVqME=";
+         jwplayer("mydiv").setup({
+             image: vidimg,
+             file: vidurl,
+             width: "750",
+             height: "422"
+         });
+     });
+     document.head.appendChild(script);
+   #+END_SRC
+
+   #+BEGIN_SRC js
+     var positionNode = document.querySelector(".article-video");
+
+     var div = document.createElement("div");
+     div.id = "mydiv";
+     positionNode.appendChild(div);
+
+     var script = document.createElement("script");
+     script.src = "https://sakhalin.tv/jwplayer/7.8.7/jwplayer.js";
+     script.addEventListener("load", (e) => {
+         var configImage = "https://s2.sakhalin.tv/img/p/4/5/45064efbce311ce22761424cd991a82c-1.jpg"
+         var configSources = [
+             {
+                 file: "https://s2.sakhalin.tv/movies/4/5/45064efbce311ce22761424cd991a82c.360p.mp4",
+                 label: "360p1"
+             },
+             {
+                 file: "https://s2.sakhalin.tv/movies/4/5/45064efbce311ce22761424cd991a82c.360p.mp4",
+                 label: "360p2"
+             },
+             {
+                 file: "https://s2.sakhalin.tv/movies/4/5/45064efbce311ce22761424cd991a82c.360p.mp4",
+                 label: "360p3"
+             }
+         ]
+
+         jwplayer.key = "WMEKOZ42QalnSupiRYb8CBnIjHTo9y9fsWFK8EtVqME=";
+         jwplayer("mydiv").setup({
+             image: configImage,
+             sources: configSources,
+             width: "750",
+             height: "422"
+         });
+     });
+     document.head.appendChild(script);
+   #+END_SRC
+
+** DONE На страницах с кино сделать замену видеоплеера
+   :PROPERTIES:
+   :issue_id: 2
+   :issue_type: task
+   :ARCHIVE_TIME: 2020-01-23 Чт 11:34
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Задачи
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+   [2019-06-22 Сб]
+
+   Эти страницы бывают как минимум двух типов.
+
+** DONE На страницах с событиями сделать замену видеоплеера
+   :PROPERTIES:
+   :issue_id: 3
+   :issue_type: task
+   :ARCHIVE_TIME: 2020-01-23 Чт 11:34
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Задачи
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+   [2019-06-22 Сб]
+
+   На этих страницах видео предоставляется в разном качестве. Нужно
+   выбрать лучшее качество из предоставленных.
+
+** DONE Добавить опцию открытия скрытого автором сообщения
+   :PROPERTIES:
+   :issue_id: 5
+   :issue_type: task
+   :ARCHIVE_TIME: 2020-01-23 Чт 11:34
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Задачи
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+   [2019-06-22 Сб]
+
+   Топик с таким сообщением
+   https://forum.sakh.com/?sub=1747878
+
+** DONE Добавить опцию открытия скрытого пользователями сообщения
+   :PROPERTIES:
+   :issue_id: 6
+   :issue_type: task
+   :ARCHIVE_TIME: 2020-01-23 Чт 11:34
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Задачи
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+   [2019-06-22 Сб]
+
+   Топик с таким сообщением
+   https://forum.sakh.com/?sub=1756508
+
+
+* Архив багов
+
+** FIXED Исправить сильно растягивающееся видео
+   :PROPERTIES:
+   :issue_id: 4
+   :issue_type: bug
+   :ARCHIVE_TIME: 2020-01-23 Чт 11:34
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Баги
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: FIXED
+   :END:
+
+   [2019-06-22 Сб]
+
+   https://sakhalin.tv/embed/120027/
+
+
+* Архив окружения
