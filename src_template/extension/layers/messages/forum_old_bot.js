@@ -59,7 +59,7 @@
                 newSpan.classList.add("botmark");
                 newSpan.style.paddingLeft = "1em";
 
-                newImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-botmark.svg");
+                newImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-botmark.svg");
                 newImage.style.width = "0.7em";
 
                 newSpan.appendChild(newImage);

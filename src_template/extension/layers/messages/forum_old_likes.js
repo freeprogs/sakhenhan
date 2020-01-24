@@ -49,7 +49,7 @@
         newSpan.classList.add("point");
         newSpan.style.paddingLeft = "1em";
 
-        newImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-circle-pink.svg");
+        newImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-circle-pink.svg");
         newImage.style.width = "0.7em";
 
         newSpan.appendChild(newImage);
@@ -105,10 +105,10 @@
         likesDivNode.classList.add("likes");
         dislikesDivNode.classList.add("dislikes");
 
-        likesImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-likes-plus.svg");
+        likesImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-likes-plus.svg");
         likesImage.style.width = "1.5em";
 
-        dislikesImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-likes-minus.svg");
+        dislikesImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-likes-minus.svg");
         dislikesImage.style.width = "1.5em";
 
         likesDivRightNode.style.color = "black";
@@ -279,7 +279,7 @@
         newSpan.classList.add("point");
         newSpan.style.paddingLeft = "1em";
 
-        newImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-circle-pink.svg");
+        newImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-circle-pink.svg");
         newImage.style.width = "0.7em";
 
         newSpan.appendChild(newImage);
@@ -334,10 +334,10 @@
         likesDivNode.classList.add("likes");
         dislikesDivNode.classList.add("dislikes");
 
-        likesImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-likes-plus.svg");
+        likesImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-likes-plus.svg");
         likesImage.style.width = "1.5em";
 
-        dislikesImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-likes-minus.svg");
+        dislikesImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-likes-minus.svg");
         dislikesImage.style.width = "1.5em";
 
         likesDivRightNode.style.color = "black";

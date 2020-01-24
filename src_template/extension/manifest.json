@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
-  "name": "SakhCom Enhancer",
-  "version": "1.0",
+  "name": "__PROGRAM_NAME__",
+  "version": "__PROGRAM_VERSION_NO_V__",
 
-  "description": "SakhCom Enhancer description.",
+  "description": "__PROGRAM_NAME__ description.",
 
   "icons": {
-    "48": "icons/sakhcom_enhancer.svg"
+    "48": "icons/__PROGRAM_NAME__-title.svg"
   },
 
   "browser_action": {
     "default_icon": {
-      "48": "icons/sakhcom_enhancer.svg"
+      "48": "icons/__PROGRAM_NAME__-title.svg"
     }
   },
 
@@ -74,7 +74,7 @@
 
   "applications": {
     "gecko": {
-      "id": "sakhcom_enhancer@localhost"
+      "id": "__PROGRAM_NAME__@localhost"
     }
   }
 

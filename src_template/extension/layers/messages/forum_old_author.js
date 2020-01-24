@@ -60,7 +60,7 @@
                 newSpan.classList.add("authormark");
                 newSpan.style.paddingLeft = "1em";
 
-                newImage.src = browser.runtime.getURL("icons/sakhcom_enhancer-authormark.svg");
+                newImage.src = browser.runtime.getURL("icons/__PROGRAM_NAME__-authormark.svg");
                 newImage.style.width = "0.7em";
 
                 newSpan.appendChild(newImage);
