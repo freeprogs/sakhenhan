@@ -1,0 +1,32 @@
+
+.options-forum {
+    padding: 1.5em 1.5em;
+}
+
+.options-video {
+    padding: 1.5em 1.5em;
+}
+
+.options-submitbuttons {
+    padding: 1.5em 1.5em;
+}
+
+.options-savebutton {
+    ;
+}
+
+.options-defaultbutton {
+    padding-left: 1.5em;
+}
+
+.left-column {
+    width: 20em;
+    height: 3em;
+    padding-top: 0.3em;
+}
+
+.right-column {
+    height: 3em;
+    position: absolute;
+    right: 10em;
+}

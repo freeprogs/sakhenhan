@@ -1,0 +1,81 @@
+{
+  "manifest_version": 2,
+  "name": "SakhCom Enhancer",
+  "version": "1.0",
+
+  "description": "SakhCom Enhancer description.",
+
+  "icons": {
+    "48": "icons/sakhcom_enhancer.svg"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/sakhcom_enhancer.svg"
+    }
+  },
+
+  "background": {
+    "scripts": ["background/bg-options.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://forum.sakh.com/?sub=*"],
+      "js": [
+        "layers/messages/forum_old_likes.js",
+        "layers/messages/forum_old_bot.js",
+        "layers/messages/forum_old_author.js",
+        "layers/messages/forum_old_users.js",
+        "layers/messages/forum_old_indicators.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://sakhalin.info/news/*",
+        "*://sakhalin.info/videos/*",
+        "*://sakhalin.info/weekly/*",
+        "*://sakhalin.info/auto/*"
+      ],
+      "js": ["layers/videos/news_article.js"]
+    },
+    {
+      "matches": ["*://sakhalin.tv/movie/*"],
+      "js": ["layers/videos/tv_movie.js"]
+    },
+    {
+      "matches": ["*://sakhalin.tv/embed/*"],
+      "js": ["layers/videos/tv_embed.js"]
+    },
+    {
+      "matches": [
+        "*://afisha.sakh.com/event/*",
+        "*://afisha.sakh.com/cinema/*",
+        "*://afisha.sakh.com/theatre/*",
+        "*://afisha.sakh.com/concert/*",
+        "*://afisha.sakh.com/expo/*",
+        "*://afisha.sakh.com/action/*",
+        "*://afisha.sakh.com/sport/*",
+        "*://afisha.sakh.com/children/*"
+      ],
+      "js": ["layers/videos/afisha.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "permissions": [
+    "storage",
+    "*://forum-beta.sakh.com/*",
+    "*://sakhalin.tv/*"
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "sakhcom_enhancer@localhost"
+    }
+  }
+
+}
