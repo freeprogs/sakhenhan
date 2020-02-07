@@ -548,6 +548,13 @@
         setTimeout(() => {
             processTopPost(options);
             processPosts(options);
+
+            console.log(
+                "Test",
+                testscript_object.f2(3),
+                testscript_object.f3(3)
+            );
+
         }, 100);
     }, 100);
 

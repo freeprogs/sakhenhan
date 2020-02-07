@@ -27,7 +27,8 @@
         "layers/messages/forum_old_bot.js",
         "layers/messages/forum_old_author.js",
         "layers/messages/forum_old_users.js",
-        "layers/messages/forum_old_indicators.js"
+        "layers/messages/forum_old_indicators.js",
+        "layers/messages/testscript.js"
       ]
     },
     {
