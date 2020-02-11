@@ -75,7 +75,7 @@
 
   "applications": {
     "gecko": {
-      "id": "__PROGRAM_NAME__@localhost"
+      "id": "__PROGRAM_NAME__-__PROGRAM_EXTENSION_ID__@localhost"
     }
   }
 
