@@ -148,7 +148,7 @@
     function processVideoFrames(options) {
         var videoFrames = document.querySelectorAll(
             ".article-video.video-sakhalin-tv");
-        var wrappedVideoFrames = Array.map(videoFrames, (i) => {
+        var wrappedVideoFrames = Array.from(videoFrames).map((i) => {
             return new VideoFrameFacade(i);
         });
         wrappedVideoFrames.forEach((i) => {

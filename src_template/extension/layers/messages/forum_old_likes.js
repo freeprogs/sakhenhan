@@ -206,10 +206,10 @@
                     "div.emotion-like ul.emotion-user-list");
                 if (likesNode) {
                     var likeNodes = likesNode.querySelectorAll("li");
-                    var likeValidNodes = Array.filter(likeNodes, (i) => {
+                    var likeValidNodes = Array.from(likeNodes).filter((i) => {
                         return i.querySelector("a");
                     });
-                    var likeUsers = Array.map(likeValidNodes, (i) => {
+                    var likeUsers = Array.from(likeValidNodes).map((i) => {
                         var hrefNode = i.querySelector("a");
                         var spanNode = i.querySelector("span");
                         var userName = hrefNode.getAttribute("data-id");
@@ -241,10 +241,10 @@
                     "div.emotion-dislike ul.emotion-user-list");
                 if (dislikesNode) {
                     var dislikeNodes = dislikesNode.querySelectorAll("li");
-                    var dislikeValidNodes = Array.filter(dislikeNodes, (i) => {
+                    var dislikeValidNodes = Array.from(dislikeNodes).filter((i) => {
                         return i.querySelector("a");
                     });
-                    var dislikeUsers = Array.map(dislikeValidNodes, (i) => {
+                    var dislikeUsers = Array.from(dislikeValidNodes).map((i) => {
                         var hrefNode = i.querySelector("a");
                         var spanNode = i.querySelector("span");
                         var userName = hrefNode.getAttribute("data-id");
@@ -435,10 +435,10 @@
                     "div.emotion-like ul.emotion-user-list");
                 if (likesNode) {
                     var likeNodes = likesNode.querySelectorAll("li");
-                    var likeValidNodes = Array.filter(likeNodes, (i) => {
+                    var likeValidNodes = Array.from(likeNodes).filter((i) => {
                         return i.querySelector("a");
                     });
-                    var likeUsers = Array.map(likeValidNodes, (i) => {
+                    var likeUsers = Array.from(likeValidNodes).map((i) => {
                         var hrefNode = i.querySelector("a");
                         var spanNode = i.querySelector("span");
                         var userName = hrefNode.getAttribute("data-id");
@@ -470,10 +470,10 @@
                     "div.emotion-dislike ul.emotion-user-list");
                 if (dislikesNode) {
                     var dislikeNodes = dislikesNode.querySelectorAll("li");
-                    var dislikeValidNodes = Array.filter(dislikeNodes, (i) => {
+                    var dislikeValidNodes = Array.from(dislikeNodes).filter((i) => {
                         return i.querySelector("a");
                     });
-                    var dislikeUsers = Array.map(dislikeValidNodes, (i) => {
+                    var dislikeUsers = Array.from(dislikeValidNodes).map((i) => {
                         var hrefNode = i.querySelector("a");
                         var spanNode = i.querySelector("span");
                         var userName = hrefNode.getAttribute("data-id");
@@ -522,12 +522,12 @@
 
     function processPosts(options) {
         var allTables = document.getElementsByTagName("table");
-        var postTables = Array.filter(allTables, (i) => {
+        var postTables = Array.from(allTables).filter((i) => {
             var cond1 = /^t_rep_a_id/.test(i.id);
             var cond2 = !i.querySelector("span.gr");
             return cond1 && cond2;
         });
-        var wrappedPosts = Array.map(postTables, (i) => {
+        var wrappedPosts = Array.from(postTables).map((i) => {
             return new PostFacade(i);
         });
         wrappedPosts.forEach((i) => {

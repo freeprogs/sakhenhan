@@ -53,12 +53,12 @@
 
     function processPosts() {
         var allTables = document.getElementsByTagName("table");
-        var postTables = Array.filter(allTables, (i) => {
+        var postTables = Array.from(allTables).filter((i) => {
             var cond1 = /^t_rep_a_id/.test(i.id);
             var cond2 = !i.querySelector("span.gr");
             return cond1 && cond2;
         });
-        var wrappedPosts = Array.map(postTables, (i) => {
+        var wrappedPosts = Array.from(postTables).map((i) => {
             return new PostFacade(i);
         });
 
