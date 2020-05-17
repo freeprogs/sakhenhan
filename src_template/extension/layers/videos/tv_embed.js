@@ -115,7 +115,7 @@
 
         oldVideoFrame.remove();
 
-        newVideoFrame.classList.add(".video");
+        newVideoFrame.classList.add("video");
 
         newVideoNode.setAttribute("controls", "controls");
         newVideoNode.style.backgroundColor = "black";

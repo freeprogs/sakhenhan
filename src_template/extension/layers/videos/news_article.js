@@ -115,7 +115,7 @@
 
         oldVideoFrame.style.display = "none";
 
-        newVideoFrame.classList.add(".video");
+        newVideoFrame.classList.add("video");
 
         newVideoNode.setAttribute("width", "750");
         newVideoNode.setAttribute("height", "422");

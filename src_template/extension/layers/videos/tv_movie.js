@@ -115,7 +115,7 @@
 
         oldVideoFrame.remove();
 
-        newVideoFrame.classList.add(".video");
+        newVideoFrame.classList.add("video");
 
         newVideoNode.setAttribute("width", "100%");
         newVideoNode.setAttribute("height", "480");
