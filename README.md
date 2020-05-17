@@ -15,7 +15,7 @@ A browser extension for Sakh.com forum https://forum.sakh.com
 
 ## Requirements
 
-This extension has tested in Mozilla Firefox 66.0.5 .
+This extension has tested in Mozilla Firefox 66.0.5 and Mozilla Firefox 76.0.1 .
 
 
 ## Building
