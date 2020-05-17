@@ -164,11 +164,9 @@
 
     var options = (new OptionsFacade()).createConnection();
 
-    setTimeout(() => {
+    setInterval(() => {
         options.update();
-        setTimeout(() => {
-            processVideoFrames(options);
-        }, 100);
-    }, 100);
+        processVideoFrames(options);
+    }, 2000);
 
 })();
