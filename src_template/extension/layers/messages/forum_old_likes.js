@@ -187,7 +187,7 @@
         var infoBarNode = this.node.querySelector(".infobar");
 
         function getLikesPageUrl(node) {
-            var urlPrefix = "https://forum-beta.sakh.com/likes/thread/"
+            var urlPrefix = "https://forum.sakh.com/likes/thread/"
             var postId = node.querySelector("div").id.replace("mhid", "");
             return urlPrefix + postId + "/";
         }
@@ -416,7 +416,7 @@
         var infoBarNode = this.node.querySelector(".infobar");
 
         function getLikesPageUrl(node) {
-            var urlPrefix = "https://forum-beta.sakh.com/likes/reply/"
+            var urlPrefix = "https://forum.sakh.com/likes/reply/"
             var postId = node.id.replace("t_rep_a_id_", "");
             return urlPrefix + postId;
         }

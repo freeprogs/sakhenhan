@@ -6,8 +6,8 @@ m4_define(__PROGRAM_LICENSE__, GNU GPLv3)m4_dnl
 m4_define(__PROGRAM_WEBSITE_FIRST__, http://freeprogs.pen.io)m4_dnl
 m4_define(__PROGRAM_WEBSITE_SECOND__, https://freeprogs.github.io/sakhenhan)m4_dnl
 m4_define(__PROGRAM_SOURCES__, https://github.com/freeprogs/sakhenhan.git)m4_dnl
-m4_define(__PROGRAM_DAY__, 23)m4_dnl
-m4_define(__PROGRAM_MONTH__, Jan)m4_dnl
+m4_define(__PROGRAM_DAY__, 29)m4_dnl
+m4_define(__PROGRAM_MONTH__, Jul)m4_dnl
 m4_define(__PROGRAM_YEAR__, 2020)m4_dnl
 m4_define(__PROGRAM_FIRST_YEAR__, 2019)m4_dnl
 m4_define(__PROGRAM_COPYRIGHT__, `Copyright (C) __PROGRAM_FIRST_YEAR__-__PROGRAM_YEAR__')m4_dnl

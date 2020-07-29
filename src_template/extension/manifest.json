@@ -21,7 +21,9 @@
 
   "content_scripts": [
     {
-      "matches": ["*://forum.sakh.com/?sub=*"],
+      "matches": [
+        "*://forum-v3.sakh.com/?sub=*"
+      ],
       "js": [
         "layers/messages/forum_old_likes.js",
         "layers/messages/forum_old_bot.js",
@@ -69,7 +71,7 @@
 
   "permissions": [
     "storage",
-    "*://forum-beta.sakh.com/*",
+    "*://forum.sakh.com/*",
     "*://sakhalin.tv/*"
   ],
 
