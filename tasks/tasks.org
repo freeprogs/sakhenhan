@@ -3,7 +3,7 @@
 #+TODO: BUG(b!) | FIXED(f) REJECT(r)
 #+PRIORITIES: A F C
 #+TAGS: current(c) testing(t)
-#+CONSTANTS: last_issue_id=20
+#+CONSTANTS: last_issue_id=21
 
 * Задачи
   :PROPERTIES:
@@ -140,6 +140,18 @@
    версии форума.
 
    В настройках должно быть поле максимального количества сообщений.
+
+** TASK Сделать правильную обработку видео YouTube
+   :PROPERTIES:
+   :issue_id: 21
+   :issue_type: task
+   :END:
+
+   [2020-08-12 Ср]
+
+   Сейчас на Афише некоторые видео стали публиковать на сервисе
+   YouTube. Поэтому надо либо не трогать их, либо вставлять ролик в
+   тег video, как это делается с другими видео.
 
 
 * Баги
