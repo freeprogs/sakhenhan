@@ -3,7 +3,7 @@
 #+TODO: BUG(b!) | FIXED(f) REJECT(r)
 #+PRIORITIES: A F C
 #+TAGS: current(c) testing(t)
-#+CONSTANTS: last_issue_id=22
+#+CONSTANTS: last_issue_id=23
 
 * Задачи
   :PROPERTIES:
@@ -206,6 +206,14 @@
 ** TASK Сделать более подробное описание расширения внутри README
    :PROPERTIES:
    :issue_id: 22
+   :issue_type: task
+   :END:
+
+   [2020-08-12 Ср]
+
+** TASK Сделать комментарии модулям и функциям
+   :PROPERTIES:
+   :issue_id: 23
    :issue_type: task
    :END:
 
