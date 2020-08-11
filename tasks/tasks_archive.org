@@ -178,3 +178,18 @@
 
 
 * Архив окружения
+
+** DONE Сделать основу для юнит-тестов
+   CLOSED: [2020-08-12 Ср 08:44]
+   :PROPERTIES:
+   :issue_id: 14
+   :issue_type: task
+   :ARCHIVE_TIME: 2020-08-12 Ср 08:46
+   :ARCHIVE_FILE: ~/prog/projects/js/sakhenhan/tasks/tasks.org
+   :ARCHIVE_OLPATH: Окружение проекта
+   :ARCHIVE_CATEGORY: tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+   [2019-06-22 Сб]
+

@@ -268,15 +268,6 @@
   :ARCHIVE:  tasks_archive.org::* Архив окружения
   :END:
 
-** DONE Сделать основу для юнит-тестов
-   CLOSED: [2020-08-12 Ср 08:44]
-   :PROPERTIES:
-   :issue_id: 14
-   :issue_type: task
-   :END:
-
-   [2019-06-22 Сб]
-
 ** TASK Сделать репозиторий
    :PROPERTIES:
    :issue_id: 15
