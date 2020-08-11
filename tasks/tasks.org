@@ -3,7 +3,7 @@
 #+TODO: BUG(b!) | FIXED(f) REJECT(r)
 #+PRIORITIES: A F C
 #+TAGS: current(c) testing(t)
-#+CONSTANTS: last_issue_id=23
+#+CONSTANTS: last_issue_id=24
 
 * Задачи
   :PROPERTIES:
@@ -214,6 +214,14 @@
 ** TASK Сделать комментарии модулям и функциям
    :PROPERTIES:
    :issue_id: 23
+   :issue_type: task
+   :END:
+
+   [2020-08-12 Ср]
+
+** TASK Перевести все объявления переменных из var в const
+   :PROPERTIES:
+   :issue_id: 24
    :issue_type: task
    :END:
 
