@@ -268,7 +268,8 @@
   :ARCHIVE:  tasks_archive.org::* Архив окружения
   :END:
 
-** TASK Сделать репозиторий
+** DONE Сделать репозиторий
+   CLOSED: [2020-08-12 Ср 08:46]
    :PROPERTIES:
    :issue_id: 15
    :issue_type: task
